@@ -1,0 +1,45 @@
+@import '../../assets/scss/mixins.scss';
+
+
+
+.block-main {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: rem(15);
+    justify-items: center;
+
+    &__item {
+        border: 0.5px solid #CDCDCD;
+        border-radius: 8px;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+        }
+
+        &:active {
+            border: 0.5px solid #ED5517;
+        }
+    }
+
+    &__btn {
+        font-weight: 700;
+        font-size: rem(24);
+        line-height: rem(36);
+        color: #0A0A0C;
+        min-width: rem(80);
+        border-radius: 8px;
+        padding: rem(33) rem(8);
+        background-color: #fff;
+
+        &.visible {
+            visibility: hidden;
+        }
+
+        &.active {
+            border: 0.5px solid #ED5517;
+        }
+    }
+
+}

@@ -1,0 +1,14 @@
+@import '../../assets/scss/mixins.scss';
+
+.header {
+
+    &__container {}
+
+    &__title {
+        font-weight: 700;
+        @include adaptiveValue('font-size', 58, 40);
+        @include adaptiveValue('line-heigh', 72, 56);
+        text-align: center;
+        @include adaptiveValue('margin-top', 48, 32);
+    }
+}

@@ -1,0 +1,13 @@
+@import '../../assets/scss/mixins.scss';
+
+
+.main {
+    @include adaptiveValue('margin-top', 108, 64);
+    margin-bottom: rem(40);
+
+    &__container {
+        max-width: rem(745);
+    }
+
+    &__block {}
+}
